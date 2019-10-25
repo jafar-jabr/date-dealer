@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "description": "Date and time processing library.",
+  "main": "lib/DateDealer.js",
+  "name": "data-dealer",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jafaronly/data-dealer.git"
+  },
+  "keywords": [
+    "data and time",
+    "date",
+    "moment",
+    "caropn"
+  ],
+  "authors": [
+    {
+      "name": "Jafar Jabr",
+      "email": "jafar.jabr.dev@gmail.com"
+    },
+    {
+      "name": "Alexandru Simache",
+      "email": "simache.alex@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jafaronly/data-dealer.git/issues"
+  },
+  "homepage": "https://github.com/jafaronly/data-dealer.git#readme",
+  "dependencies": {
+   }
+}
