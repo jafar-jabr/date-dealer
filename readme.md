@@ -13,10 +13,16 @@ Usage
 
 ~~~ javascript
 const dateDealer = require("date-dealer")
+
+// parse to date
+const  dateObject = dateDealer.dateOf('2019-03-24');
+console.log(dateObject);
+
 // format date string or object
-const  = dateDealer.doFormat('2019-03-24 12:30:40', 'dd-mm-yy h:MM:ss');
+const  formattedDate = dateDealer.doFormat('2019-03-24 12:30:40', 'dd-mm-yy h:MM:ss');
 console.log(formattedDate);
-//available formats:
+/*
+available formats:
 ['ddd mmm dd yyyy HH:MM:ss',
   'm/d/yy',
   'mmm d, yyyy',
@@ -30,6 +36,7 @@ console.log(formattedDate);
   'h:MM:ss TT Z',
   'yyyy-mm-dd',
   'HH:MM:ss']
+*/
 
 // get dates array started from specific date
 var dates = dateDealer.getDatesArray('2019-10-10', 12, false));
