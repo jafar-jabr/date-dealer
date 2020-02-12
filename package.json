@@ -1,5 +1,5 @@
 {
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "Date and time processing library.",
   "main": "lib/DateDealer.js",
   "name": "date-dealer",
@@ -31,6 +31,5 @@
     "url": "https://github.com/jafaronly/data-dealer.git/issues"
   },
   "homepage": "https://github.com/jafaronly/data-dealer.git#readme",
-  "dependencies": {
-   }
+  "dependencies": {}
 }
