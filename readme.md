@@ -53,8 +53,11 @@ console.log(time);
 var dayIndex = dateDealer.getDayIndex('2019-01-10');
 console.log(dayIndex);
 
-var timeStamp = dateDealer.timeStampOf('2019-01-10 12:30:40');
-console.log(timeStamp); // timestamp in seconds
+var timeStamp = dateDealer.timeStampOf('2019-01-10 12:30:40', 'milliseconds');
+console.log(timeStamp); // timestamp in milliseconds
+
+var timeStamp = dateDealer.timeStampOf('2019-01-10 12:30:40', 'seconds');
+console.log(timeStamp); // timestamp in seconds (default)
 
 // check if the given date is weekend (Saturday or Sunday)
 var isWeekend = dateDealer.isWeekEnd('2019-12-21');
@@ -95,7 +98,7 @@ License
 
 (MIT License)
 
-Copyright © 2019-2020 Jafar Jabr & Alexandru Simache
+Copyright © 2019-2020 Jafar Jabr
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the “Software”), to deal in
