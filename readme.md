@@ -47,11 +47,14 @@ console.log(dates);
 // similar getDatesAfter and getDatesBefore, dateDealer.getDatesBetween('2019-01-10', '2019-01-21')
 
 var time = dateDealer.addMinutes('13:50', 20);
-console.log(time);
+console.log(time); // 14:10
 
 // return day index [Mon,Tue,...,Sun] -> [0,1,...,6]
 var dayIndex = dateDealer.getDayIndex('2019-01-10');
 console.log(dayIndex);
+
+var isoString = ISOStringOf('2019-01-10 12:30:40'); // the date as object or string
+console.log(isoString); // iso string of the date
 
 var timeStamp = dateDealer.timeStampOf('2019-01-10 12:30:40', 'milliseconds');
 console.log(timeStamp); // timestamp in milliseconds
@@ -61,7 +64,7 @@ console.log(timeStamp); // timestamp in seconds (default)
 
 // check if the given date is weekend (Saturday or Sunday)
 var isWeekend = dateDealer.isWeekEnd('2019-12-21');
-console.log(isWeekend);
+console.log(isWeekend); // true
 
 var thisMoment = dateDealer.atThisMoment('HH:MM:ss');
 console.log(thisMoment);
