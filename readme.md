@@ -1,5 +1,21 @@
-Date Dealer
-=======
+<h1 align="center">
+  <a href="https://github.com/jafar-jabr/date-dealer/">
+    Date Dealer
+  </a>
+</h1>
+
+<p align="center">
+  <a href="https://github.com/jafar-jabr/date-dealer/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="DateDealer is released under the MIT license." />
+  </a>
+  <a href="https://circleci.com/gh/facebook/react-native">
+    <img src="https://circleci.com/gh/facebook/react-native.svg?style=shield" alt="Current CircleCI build status." />
+  </a>
+  <a href="https://github.com/jafar-jabr/date-dealer">
+    <img src="https://badge.fury.io/js/date-dealer.svg" alt="Current npm package version." />
+  </a>
+</p>
+
 (all what you need about date and time) we still have long road to achieve this but we work on it. 
 any contribution or suggestion will be highly appreciated.
 
@@ -23,7 +39,8 @@ const  formattedDate = dateDealer.doFormat('2019-03-24 12:30:40', 'dd-mm-yy h:MM
 console.log(formattedDate);
 /*
 available formats:
-['ddd mmm dd yyyy HH:MM:ss',
+[
+  'ddd mmm dd yyyy HH:MM:ss',
   'm/d/yy',
   'mmm d, yyyy',
   'mmmm d, yyyy',
@@ -66,7 +83,13 @@ console.log(timeStamp); // timestamp in seconds (default)
 var isWeekend = dateDealer.isWeekEnd('2019-12-21');
 console.log(isWeekend); // true
 
-var thisMoment = dateDealer.atThisMoment('HH:MM:ss');
+var timezone = dateDealer.getTimezone();
+console.log(timezone); // Asia/Baghdad
+
+var thisMoment = dateDealer.atThisMoment('HH:MM:ss', timezone);
+// ** default timezone is 'UTC'
+// other timezones can be found here https://github.com/jafar-jabr/date-dealer/timezones.json
+
 console.log(thisMoment);
 //similar dateDealer.yesterday('yyyy-mm-dd'),
  dateDealer.mondayThisWeek(), 
@@ -77,7 +100,7 @@ console.log(thisMoment);
  dateDealer.saturdayThisWeek(), 
  dateDealer.sundayThisWeek(), 
 ~~~
-~~~
+~~~ javascript
  const dateObject = dateDealer.dateObjectOf(dateDealer.atThisMoment());
 //accept the date either as string or an object and return date Object which has the following properties
    .plusYears(x)
