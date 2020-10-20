@@ -8,9 +8,6 @@
   <a href="https://github.com/jafar-jabr/date-dealer/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="DateDealer is released under the MIT license." />
   </a>
-  <a href="https://circleci.com/gh/facebook/react-native">
-    <img src="https://circleci.com/gh/facebook/react-native.svg?style=shield" alt="Current CircleCI build status." />
-  </a>
   <a href="https://github.com/jafar-jabr/date-dealer">
     <img src="https://badge.fury.io/js/date-dealer.svg" alt="Current npm package version." />
   </a>
@@ -85,7 +82,7 @@ console.log(isWeekend); // true
 
 var thisMoment = dateDealer.atThisMoment('HH:MM:ss', timezone);
 // ** timezone is optional, (default is current timezone)
-// other timezones can be found @ https://github.com/jafar-jabr/date-dealer/timezones.json
+// other timezones can be found @ https://github.com/jafar-jabr/date-dealer/blob/master/timezones.json
 
 console.log(thisMoment);
 //similar dateDealer.yesterday('yyyy-mm-dd'),
