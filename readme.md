@@ -80,9 +80,7 @@ console.log(timeStamp); // timestamp in seconds (default)
 var isWeekend = dateDealer.isWeekEnd('2019-12-21');
 console.log(isWeekend); // true
 
-var thisMoment = dateDealer.atThisMoment('HH:MM:ss', timezone);
-// ** timezone is optional, (default is current timezone)
-// other timezones can be found @ https://github.com/jafar-jabr/date-dealer/blob/master/timezones.json
+var thisMoment = dateDealer.atThisMoment('HH:MM:ss');
 
 console.log(thisMoment);
 //similar dateDealer.yesterday('yyyy-mm-dd'),
