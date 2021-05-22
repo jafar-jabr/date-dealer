@@ -13,7 +13,7 @@
   </a>
 </p>
 
-(all what you need about date and time) we still have long road to achieve this but we work on it. 
+(All what you need about date and time) we still have long road to achieve this, but we work on it. 
 any contribution or suggestion will be highly appreciated.
 
 Installation
@@ -70,11 +70,9 @@ console.log(dayIndex);
 const isoString = ISOStringOf('2019-01-10 12:30:40'); // the date as object or string
 console.log(isoString); // iso string of the date
 
-const timeStamp = dateDealer.timeStampOf('2019-01-10 12:30:40', 'milliseconds');
+const timeStamp = dateDealer.timeStampOf('2019-01-10 12:30:40');
 console.log(timeStamp); // timestamp in milliseconds
 
-const timeStamp = dateDealer.timeStampOf('2019-01-10 12:30:40', 'seconds');
-console.log(timeStamp); // timestamp in seconds (default)
 
 // check if the given date is weekend (Saturday or Sunday)
 const isWeekend = dateDealer.isWeekEnd('2019-12-21');
@@ -116,11 +114,20 @@ console.log(thisMoment);
 ~~~
 Calculate age:
 ~~~ javascript
-const age = calculateAge('1984-06-19');
+const age = dateDealer.calculateAge('1984-06-19');
 //{ years: 36, months: 6, days: 18 }
 
 ~~~
 
+Time between:
+~~~ javascript
+const timeBetween = dateDealer.timeBetween('2021-04-23 21:37:30', '2021-05-20 22:40:20');
+//{ days: 27, hours: 1, minutes: 2, seconds: 50 }
+
+//similar 
+dateDealer.timeSince('2021-04-23 21:37:30')
+dateDealer.timeUntil('2022-04-23 21:37:30')
+~~~
 License
 -------
 
